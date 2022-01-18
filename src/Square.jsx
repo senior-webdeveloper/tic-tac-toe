@@ -1,8 +1,9 @@
-import './App.css';
-import { useState, useEffect } from 'react';
+const Square = ({ value, squareClick }) => {
 
-function Square(props) {
-
+    return (
+        <button onClick={squareClick} className="square">
+            {value}
+        </button>
+    )
 }
-
 export default Square;
